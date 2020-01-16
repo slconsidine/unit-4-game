@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+button {
+    background-image: url("https://via.placeholder.com/150/");
+    height: 150px;
+    width: 150px;
+}
+
+span {
+    visibility: hidden;
+}
