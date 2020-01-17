@@ -26,22 +26,33 @@ $(document).ready(function() {
     $(".crystal1").click(function() {
         myCounter+=crystal1;
         $("#userScore").text(myCounter);
+        if (myCounter == random) {
+            alert("winner");
+        }
     });
     $(".crystal2").click(function() {
         myCounter+=crystal2;
         $("#userScore").text(myCounter);
+        if (myCounter == random) {
+            alert("winner");
+        }
     });
     $(".crystal3").click(function() {
         myCounter+=crystal3;
         $("#userScore").text(myCounter);
+        if (myCounter == random) {
+            alert("winner");
+        }
     });
     $(".crystal4").click(function() {
         myCounter+=crystal4;
         $("#userScore").text(myCounter);
+        if (myCounter == random) {
+            alert("winner");
+        }
     });
 
-        
-})
+});
 
 
 //PSEUDOCODE
