@@ -4,6 +4,8 @@
 <head>
     <title>Crystals Collector</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <!-- jQuery Link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,7 +24,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <!-- Personal Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
@@ -33,51 +36,46 @@
 
 <body>
 
-    <div class="jumbotron">
-        <h1>Crystals Collector Game</h1>
-    </div>
-
+    <!-- <div class="jumbotron">
+        <h1>Feed Teddy!</h1>
+    </div> -->
+    <div class="center"><img class="logo" src="./assets/images/bobs-logo.jpg"></div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 instructions">
-                <h2>Instructions: </h2>
-                <p>1. You will be given a random number at the start of the game.</p>
-                <p>2. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-                    total score.</p>
-                <p>3. The value of each crystal is hidden from you until you click on it.</p>
-                <p>4. Each time the game starts, the game will change the value of each crystal.</p>
-                <p>5. Use the crystal to try and match the random number. Good luck!</p>
+            <h2>Instructions: </h2>
+                <p>Teddy needs something to eat from Bob's Burgers. Each button below will feed him a specific amount of burgers.
+                Try and feed Teddy the exact number of burgers he needs. Be careful not to go over!</p>
+ 
+            <div class="row">
+                <div class="col-sm-6">
+                    <div>Number of Burgers Teddy Needs: <span class="show" id="random"></span></div>
+                </div>
+                <div class="col-sm-6">
+                    <div>Number of Burgers Teddy's Eaten: <span class="show" id="userScore"></span></div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
 
-                <div>Random Number: <span class="show" id="random"></span></div>
+           <div class="row total-record">
+                <div class="col-lg-12">
+                    <div>Wins: <span class="show" id="wins"></span></div>
+                    <div>Losses: <span class="show" id="losses"></span></div>
+                </div>
+            </div>
 
+            <div class="row-3">
+                <div class="burgers">
+                    <button class="burger-btn crystal1"><span id="crystal1"></span></button>
+                    <button class="burger-btn crystal2"><span id="crystal2"></span></button>
+                    <button class="burger-btn crystal3"><span id="crystal3"></span></button>
+                    <button class="burger-btn crystal4"><span id="crystal4"></span></button>
+                </div>
+                <div id="teddy">
+                    <img src="./assets/images/teddy-2.gif">
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 total-record">
-                <div>Wins: <span class="show" id="wins"></span></div>
-                <div>Losses: <span class="show" id="losses"></span></div>
 
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-lg-8 buttons">
-                <button class="crystal1"><span id="crystal1"></span></button>
-                <button class="crystal2"><span id="crystal2"></span></button>
-                <button class="crystal3"><span id="crystal3"></span></button>
-                <button class="crystal4"><span id="crystal4"></span></button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div>Total Score: <span class="show" id="userScore"></span></div>
-            </div>
-        </div>
-    </div>
+    
 
 </body>
 

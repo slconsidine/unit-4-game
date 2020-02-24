@@ -1,52 +1,26 @@
 body {
-    font-family: 'Lato', sans-serif;
-    background-image: url(../images/chevron/chevron.png);
-    background-repeat: repeat;
-    margin-bottom: 100px;
+    background-color: #F2ED0B;
+    font-family: 'Permanent Marker';
+    font-size: 24px;
 }
 
-.jumbotron {
-    background-color: black;
-    color: white;
-    padding: 20px;
+.center {
+    margin: auto;
 }
 
-h1 {
-    text-align: center;
+.logo {
+    display: block;
+    margin: auto;
+}
+
+.container {
+    padding-top: 40px;
 }
 
 h2 {
-    font-weight: bold;
+    font-size: 48px;
 }
 
-.crystal1 {
-    background-image: url(../images/diamond-blue.png);
-    height: 150px;
-    width: 150px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
-
-.crystal2 {
-    background-image: url(../images/diamond-green.png);
-    height: 150px;
-    width: 150px;
-    margin-right: 10px;
-}
-
-.crystal3 {
-    background-image: url(../images/diamond-pink.png);
-    height: 150px;
-    width: 150px;
-    margin-right: 10px;
-}
-
-.crystal4 {
-    background-image: url(../images/diamond-purple.png);
-    height: 150px;
-    width: 150px;
-    margin-right: 10px;
-}
 span {
     visibility: hidden;
 }
@@ -55,8 +29,44 @@ span {
     visibility: visible;
 }
 
-div {
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px;
+.crystal1, .crystal2, .crystal3, .crystal4 {
+    background-image: url(../images/burger-1.png);
+
+}
+
+.burger-btn {
+    height: 50px;
+    width: 50px;
+}
+
+.total-record {
+    padding-top: 20px;
+}
+
+.row-3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.burgers {
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teddy {
+    display: inline;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 1215px) {
+    .burgers, #teddy {
+        display: block;
+        margin: auto;
+    }
+    .row-3 {
+        padding-top: 50px;
+    }
 }
