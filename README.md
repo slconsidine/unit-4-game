@@ -1,7 +1,11 @@
 # Crystals Collector Game
 ## Project Title
 **Feed Teddy**
+
+
 Github Pages Link - https://slconsidine.github.io/unit-4-game/
+
+
 ![Feed Teddy](https://github.com/slconsidine/unit-4-game/blob/master/assets/images/crystal-screenshot.PNG)
 
 
